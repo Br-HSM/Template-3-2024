@@ -226,7 +226,7 @@ a {
 
 /* header */
 .landing {
-    background-image: url(../image/image1.jpg);
+    background-image: url(image/image1.jpg);
     background-size: cover;
     position: relative;
     min-height: 100vh;
