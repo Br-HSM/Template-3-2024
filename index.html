@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template_3_2024</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="stylesheet" href="css/main.css"> 
+    <!-- JS -->
+    <script src="js/app.js" defer></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- setting menu -->
+        <div class="setting">
+            <div class="settig-menu">
+                <div class="color-setting">
+                    <h3>colors</h3>
+                    <ul class="colors">
+                        <li class="active" data-color="#7ec8e0"></li>
+                        <li data-color="#f51524"></li>
+                        <li data-color="#ceb0b0"></li>
+                        <li data-color="#ffb800"></li>
+                        <li data-color="#9dc416"></li>
+                    </ul>
+                </div>
+                <div class="random-bg">
+                    <h3>random background</h3>
+                    <span onclick="backgroudRandomYes()" class="yes active">yes</span>
+                    <span onclick="backgroudRandomNo()" class="no">no</span>
+                </div>
+                <div class="bullets-setting">
+                    <h3>bullets</h3>
+                    <span data-bullet="show" class="show active">show</span>
+                    <span data-bullet="hide" class="hide">hide</span>
+                </div>
+                <div class="reset">
+                    <h3>
+                        RESET
+                    </h3>
+                </div>
+            </div>
+            
+            <div onclick="showSettingMenu()" class="gear-btt">
+                <img  src="image/setting.svg" alt="ICON">
+            </div>
+        </div>
+        <!-- end setting menu -->
+
+        <!-- bullets nav -->
+        <div class="bullets-nav">
+            <div data-section=".skills" class="bullet">
+                <div class="bullet-text">
+                    skills
+                </div>
+            </div>
+            <div data-section=".services" class="bullet">
+                <div class="bullet-text">
+                    services
+                </div>
+            </div>
+            <div data-section=".testemonial" class="bullet">
+                <div class="bullet-text">
+                    testemonial
+                </div>
+            </div>
+            <div data-section=".about" class="bullet">
+                <div class="bullet-text">
+                    about
+                </div>
+            </div>
+            <div data-section=".contact" class="bullet">
+                <div class="bullet-text">
+                    contact
+                </div>
+            </div>
+        </div>
+        <!-- end bullests nav -->
+
+        <!-- landing -->
+        <div class="landing">
+            <div class="overlay">
+                <header>
+                    <div class="logo"><a href="#">LOGO</a></div>
+                    <div class="search search-mobile">
+                        <input type="search" placeholder="search">
+                    </div>
+                    <nav>
+                        <ul class="menu menu-mobile hidden-menu">
+                            <li onclick="hideSideBar()"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="m252.615-217.232-35.383-35.383L444.616-480 217.232-707.385l35.383-35.383L480-515.384l227.385-227.384 35.383 35.383L515.384-480l227.384 227.385-35.383 35.383L480-444.616 252.615-217.232Z"/></svg></li>
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">skills</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">contact</a></li>
+                        </ul>
+                        <ul class="menu">
+                            <li class="active menu-pc"><a href="#">Home</a></li>
+                            <li class="menu-pc"><a href="#">skills</a></li>
+                            <li class="menu-pc"><a href="#">services</a></li>
+                            <li class="menu-pc"><a href="#">About</a></li>
+                            <li class="menu-pc"><a href="#">contact</a></li>
+                            <li onclick="showSideBar()" class="menu-btt"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M140.001-254.616v-50.255h679.998v50.255H140.001Zm0-200.257v-50.254h679.998v50.254H140.001Zm0-200.256v-50.255h679.998v50.255H140.001Z"/></svg></li>
+                        </ul>
+                    </nav>
+
+
+                    <div class="search search-pc">
+                        <input type="search" placeholder="search">
+                    </div>
+                </header>
+            </div>
+            <div class="landing-text">
+                <h1><span>landing</span> text text</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non accusamus, veniam in quos tempore dolorem consequatur optio.</p>
+            </div>
+        </div>
+        <!-- end landing -->
+
+        <!-- skills -->
+            <div class="skills">
+                <div class="main-title">
+                    <h2>skills</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nam sed quam fuga maxime, a ab aspernatur? Nihil doloribus laborum tenetur. Vel molestias quis, fugit rem voluptas vitae suscipit? Voluptatem?</p>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-box">
+                        <div class="skill-text">
+                            <h3>
+                                HTML
+                            </h3>
+                        </div>
+                        <div class="skill-prc">
+                            <span data-prc="90%"></span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-text">
+                            <h3>
+                                PHYTHON
+                            </h3>
+                        </div>
+                        <div class="skill-prc">
+                            <span data-prc="40%"></span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-text">
+                            <h3>
+                                SASS
+                            </h3>
+                        </div>
+                        <div class="skill-prc">
+                            <span data-prc="20%"></span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-text">
+                            <h3>
+                                CSS
+                            </h3>
+                        </div>
+                        <div class="skill-prc">
+                            <span data-prc="80%"></span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-text">
+                            <h3>
+                                JS
+                            </h3>
+                        </div>
+                        <div class="skill-prc">
+                            <span data-prc="40%"></span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-text">
+                            <h3>
+                                REACT
+                            </h3>
+                        </div>
+                        <div class="skill-prc">
+                            <span data-prc="60%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- end skills -->
+
+        <!-- services -->
+        <div class="services">
+            <div class="main-title">
+                <h2>services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nam sed quam fuga maxime, a ab aspernatur? Nihil doloribus laborum tenetur. Vel molestias quis, fugit rem voluptas vitae suscipit? Voluptatem?</p>
+            </div>
+            <div class="s-grid">
+                <div class="grid-colone">
+                    <div class="grid-el">
+                        <div class="grid-el-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M455.386-140.001v-50.255h302.049q5 0 8.655-3.078 3.654-3.077 3.654-8.077v-289.513q0-117.97-84.905-198.677-84.906-80.707-204.812-80.707t-204.838 80.707q-84.933 80.707-84.933 198.677v235.538h-20.255q-28.769 0-49.384-20.038-20.616-20.038-20.616-48.807v-77.692q0-19.462 11.077-35.654 11.077-16.192 28.923-26.038l1.847-51.077q4.922-65.307 33.922-120.999 29-55.693 74.384-96.962 45.385-41.269 104.769-64.307Q414.308-819.999 480-819.999q65.692 0 124.769 23.039 59.077 23.038 104.769 64 45.692 40.961 74.384 96.653 28.692 55.692 34.23 121l1.847 50.077q17.461 8.23 28.73 23.538 11.27 15.307 11.27 34.153v89.308q0 18.846-11.27 34.153-11.269 15.308-28.73 23.539v59.128q0 25.519-18.43 43.464-18.429 17.946-44.134 17.946H455.386Zm-87.815-274.102q-12.673 0-21.532-8.596t-8.859-21.269q0-12.673 8.981-21.34 8.98-8.666 21.653-8.666 12.674 0 21.532 8.788 8.859 8.788 8.859 21.461 0 12.673-8.98 21.147-8.98 8.475-21.654 8.475Zm224.615 0q-12.674 0-21.532-8.596-8.859-8.596-8.859-21.269 0-12.673 8.98-21.34 8.98-8.666 21.654-8.666 12.673 0 21.532 8.788t8.859 21.461q0 12.673-8.981 21.147-8.98 8.475-21.653 8.475Zm-337.339-57.898q-6.231-97.922 60.923-167.576 67.154-69.653 166.336-69.653 82.047 0 144.009 52.038 61.961 52.038 75.576 132.807-84.153-1-154.935-45.307Q475.974-614 437.577-689.153q-15.115 74.615-63.73 131.922-48.616 57.307-119 85.23Z"/></svg>                        
+                        <h3>Design...</h3>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores similique molestias laborum amet exercitationem provident, esse blanditiis soluta quas quod eum, illum temporibus nulla ratione odio voluptatem totam libero tempore!</p>
+                    </div>
+                    <div class="grid-el">
+                        <div class="grid-el-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M400-494.873q-57.749 0-96.438-38.56-38.689-38.561-38.689-96.566 0-57.75 38.689-96.439 38.689-38.688 96.438-38.688t96.438 38.688q38.689 38.689 38.689 96.439 0 58.005-38.689 96.566-38.689 38.56-96.438 38.56ZM100.001-189.592v-80.254q0-31.128 15.667-55.167 15.667-24.038 44.846-37.756 60.256-27.82 116.82-42.448Q333.898-419.845 400-419.845h10.538q5.18 0 10.128.154-4.999 12.256-7.807 23.973-2.808 11.718-4.756 26.128H400q-62.974 0-115.538 13.115t-102.103 38.577q-17.256 8.795-24.679 21.205-7.424 12.411-7.424 26.847v29.999h260.257q3.795 13.743 9.551 26.461 5.756 12.718 13.217 23.794h-333.28Zm557.358 31.512-7.846-56.051q-16.872-4.23-32.872-12.974t-27.795-20.949l-49.204 14.641-21.282-35.665 41.795-36q-4.051-12.974-4.051-29.949 0-16.974 4.051-30.205l-41.41-36.513 21.281-35.665 48.82 15.026q11.41-12.462 27.603-21.013 16.192-8.552 33.064-12.782l7.846-56.051h44.204l7.717 56.051q16.616 4.23 32.809 12.884 16.192 8.654 27.859 21.065l48.82-15.18 21.024 35.819-41.41 36.513q4.308 13.198 4.308 30.189t-4.308 29.811l41.795 36-21.025 35.665-49.204-14.641q-12.052 12.205-28.052 20.949-16 8.744-32.616 12.974l-7.717 56.051h-44.204Zm21.751-100.793q33.171 0 54.646-21.637 21.474-21.636 21.474-54.551 0-33.171-21.508-54.645-21.509-21.474-54.68-21.474-32.914 0-54.517 21.508-21.602 21.508-21.602 54.679 0 32.915 21.636 54.517 21.637 21.603 54.551 21.603ZM400-545.128q35.974 0 60.423-24.32 24.449-24.321 24.449-60.551 0-35.975-24.449-60.424-24.449-24.448-60.423-24.448-35.974 0-60.423 24.448-24.449 24.449-24.449 60.424 0 36.23 24.449 60.551 24.449 24.32 60.423 24.32Zm0-84.871Zm10.513 390.152Z"/></svg>                        
+                        <h3>Design...</h3>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores similique molestias laborum amet exercitationem provident, esse blanditiis soluta quas quod eum, illum temporibus nulla ratione odio voluptatem totam libero tempore!</p>
+                    </div>
+                                        <div class="grid-el">
+                        <div class="grid-el-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M480-513.795ZM180.001-180.001v-387.718l-80.64 61.769-30.128-39.999L480-859.614l410.767 314.075-30.127 39.384-81.026-61.564L480-796.334 230.256-605.898v375.642h219.129q1.077 13.05 2.512 25.742 1.436 12.692 4.846 24.513H180.001ZM684.359-45.385H536.667v-47.691h65.462q-29.461-27.77-47.462-65.693-18-37.923-18-80.462 0-68.153 41.846-120.268 41.846-52.116 105.846-67.654v49.307q-44 14.538-72 52.192-28 37.654-28 86.423 0 32.847 14.154 62.078t38.154 50.923v-66.846h47.692v147.691Zm77.949-5.923V-101q45-15.154 72.5-53 27.5-37.846 27.5-85.231 0-32.846-14.154-62.077t-38.155-50.924v66.847h-47.691v-147.691h147.691v47.691h-65.462q29.462 27.769 47.462 65.692 18 37.924 18 80.462 0 68.154-41.846 120.269-41.846 52.115-105.845 67.654Z"/></svg>                        
+                        <h3>Design...</h3>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores similique molestias laborum amet exercitationem provident, esse blanditiis soluta quas quod eum, illum temporibus nulla ratione odio voluptatem totam libero tempore!</p>
+                    </div>
+                </div>
+                <div class="grid-colone">
+                    <div class="grid-el">
+                        <div class="grid-el-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M357.155-238.178q22.564-22.307 51.718-35.538 29.153-13.231 61.461-14.769-4.154 17.743-5.231 35.359-1.076 17.615.462 36.128 1.539 23.281 6.911 45.204 5.371 21.923 15.294 41.769l-11.41 11.667-119.205-119.82ZM243.179-351.282l-52.049-52.46q58.179-58.179 132.396-91.833Q397.744-529.229 480-529.229q46.179 0 89.845 11.564t83.486 32.615q-25.358 5.334-48.729 16.269-23.371 10.936-43.114 26.32-20.18-5.949-40.475-9.052-20.295-3.102-41.013-3.102-67.385 0-128.115 27.679-60.731 27.68-108.706 75.654ZM73.846-520.872 21.54-573.178q91.564-92.538 209.884-144.294Q349.744-769.229 480-769.229t248.576 51.757q118.32 51.756 209.884 144.294l-52.306 52.306q-82.385-80.487-186.782-127.115Q594.974-694.615 480-694.615q-114.974 0-219.372 46.628-104.397 46.628-186.782 127.115Zm668.486 103.181 5.179 42.41q22.667 5.82 39.539 15.448 16.872 9.629 30.257 23.629l38.102-16.769 28.204 43.947-32.974 26.666q6.052 20.001 6.052 41.206 0 21.205-6.052 41.206l32.974 26.666-28.204 43.537-38.102-16.513q-13.641 14.026-30.385 23.719-16.744 9.692-39.411 15.512l-5.179 42h-50.255l-4.769-42q-22.667-5.82-39.411-15.512-16.743-9.693-30.384-23.719l-38.102 16.513-28.204-43.537 32.973-26.666q-6.051-20.001-6.051-41.206 0-21.205 6.051-41.206l-32.973-26.666 28.204-43.947 38.102 16.769q13.384-14 30.256-23.629 16.872-9.628 39.539-15.448l4.769-42.41h50.255Zm-25.127 82.562q-39.693 0-66.795 27.103-27.103 27.103-27.103 66.795 0 39.436 27.103 66.539 27.102 27.102 66.795 27.102 39.436 0 66.538-27.102 27.103-27.103 27.103-66.539 0-39.692-27.103-66.795-27.102-27.103-66.538-27.103Z"/></svg>                        
+                        <h3>Design...</h3>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores similique molestias laborum amet exercitationem provident, esse blanditiis soluta quas quod eum, illum temporibus nulla ratione odio voluptatem totam libero tempore!</p>
+                    </div>
+                    <div class="grid-el">
+                        <div class="grid-el-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M480-513.795ZM180.001-180.001v-387.718l-80.64 61.769-30.128-39.999L480-859.614l410.767 314.075-30.127 39.384-81.026-61.564L480-796.334 230.256-605.898v375.642h219.129q1.077 13.05 2.512 25.742 1.436 12.692 4.846 24.513H180.001ZM684.359-45.385H536.667v-47.691h65.462q-29.461-27.77-47.462-65.693-18-37.923-18-80.462 0-68.153 41.846-120.268 41.846-52.116 105.846-67.654v49.307q-44 14.538-72 52.192-28 37.654-28 86.423 0 32.847 14.154 62.078t38.154 50.923v-66.846h47.692v147.691Zm77.949-5.923V-101q45-15.154 72.5-53 27.5-37.846 27.5-85.231 0-32.846-14.154-62.077t-38.155-50.924v66.847h-47.691v-147.691h147.691v47.691h-65.462q29.462 27.769 47.462 65.692 18 37.924 18 80.462 0 68.154-41.846 120.269-41.846 52.115-105.845 67.654Z"/></svg>                        
+                        <h3>Design...</h3>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores similique molestias laborum amet exercitationem provident, esse blanditiis soluta quas quod eum, illum temporibus nulla ratione odio voluptatem totam libero tempore!</p>
+                    </div>
+                                        <div class="grid-el">
+                        <div class="grid-el-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M480-513.795ZM180.001-180.001v-387.718l-80.64 61.769-30.128-39.999L480-859.614l410.767 314.075-30.127 39.384-81.026-61.564L480-796.334 230.256-605.898v375.642h219.129q1.077 13.05 2.512 25.742 1.436 12.692 4.846 24.513H180.001ZM684.359-45.385H536.667v-47.691h65.462q-29.461-27.77-47.462-65.693-18-37.923-18-80.462 0-68.153 41.846-120.268 41.846-52.116 105.846-67.654v49.307q-44 14.538-72 52.192-28 37.654-28 86.423 0 32.847 14.154 62.078t38.154 50.923v-66.846h47.692v147.691Zm77.949-5.923V-101q45-15.154 72.5-53 27.5-37.846 27.5-85.231 0-32.846-14.154-62.077t-38.155-50.924v66.847h-47.691v-147.691h147.691v47.691h-65.462q29.462 27.769 47.462 65.692 18 37.924 18 80.462 0 68.154-41.846 120.269-41.846 52.115-105.845 67.654Z"/></svg>                        
+                        <h3>Design...</h3>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores similique molestias laborum amet exercitationem provident, esse blanditiis soluta quas quod eum, illum temporibus nulla ratione odio voluptatem totam libero tempore!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end services -->
+
+        <!-- testemonial -->
+        <div class="testemonial">
+            <div class="main-title">
+                <h2>testemonial</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nam sed quam fuga maxime, a ab aspernatur? Nihil doloribus laborum tenetur. Vel molestias quis, fugit rem voluptas vitae suscipit? Voluptatem?</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <img src="image/avatar.png" alt="User 1 Avatar">
+                    <h2>Great Service!</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis velit quis ipsum lobortis scelerisque. Integer et augue consequat, lacinia urna sit amet, tincidunt elit. Donec blandit nisi nec odio efficitur consequat."</p>
+                    <p class="author">- John Doe</p>
+                </div>
+                <div class="testimonial">
+                    <img src="image/avatar.png" alt="User 2 Avatar">
+                    <h2>Awesome Experience!</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum libero sit amet lorem interdum, sed luctus mauris varius. Donec in tellus eu mauris ultrices aliquam eget non lectus."</p>
+                    <p class="author">- Jane Smith</p>
+                </div>
+                <div class="testimonial">
+                    <img src="image/avatar.png" alt="User 3 Avatar">
+                    <h2>Highly Recommended!</h2>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Phasellus ac lectus sed orci venenatis pharetra a eu lacus. Curabitur viverra augue at est scelerisque, sit amet lacinia mi feugiat."</p>
+                    <p class="author">- Michael Johnson</p>
+                </div>
+            </div>
+        </div>
+    <!-- end testemonial -->
+
+        <!-- about -->
+        <div class="about">
+            <div class="main-title">
+                <h2>about</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nam sed quam fuga maxime, a ab aspernatur? Nihil doloribus laborum tenetur. Vel molestias quis, fugit rem voluptas vitae suscipit? Voluptatem?</p>
+            </div>
+
+            <div class="about-image">
+                <div class="overlay"></div>
+                <div class="about-image-flex">
+                    <img src="image/about.jpg" alt="ABOUT IMAGE">
+                    <img src="image/about-1.jpg" alt="ABOUT IMAGE">
+                    <img src="image/about-2.jpg" alt="ABOUT IMAGE">    
+                </div>
+            </div>
+        </div>
+        <!--  contact -->
+        <div class="contact">
+            <div class="main-title">
+                <h2>contact</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nam sed quam fuga maxime, a ab aspernatur? Nihil doloribus laborum tenetur. Vel molestias quis, fugit rem voluptas vitae suscipit? Voluptatem?</p>
+            </div>
+            <div class="container">
+                <form id="contactForm">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+            
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+            
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" required>
+            
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+            
+                  <input type="submit" value="Submit">
+                </form>
+                <div id="confirmation"></div>
+              </div>
+        </div>
+        <!-- end contact -->
+
+        <div class="footer">
+            <p>Contact Us:</p>
+            <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+            <p>Phone: 123-456-7890</p>
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+          </div>
+    </div>
+</body>
+</html>
