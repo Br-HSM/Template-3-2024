@@ -84,7 +84,7 @@ function backgroudRandomNo() {
 }
 
 if (localStorage.getItem('boolean') === 'true') {
-    document.querySelector('.landing').style.backgroundImage = 'url("../image/' + localStorage.getItem('background') + '")'
+    document.querySelector('.landing').style.backgroundImage = 'url("image/' + localStorage.getItem('background') + '")'
     backgroudOptionBoolean = false
     clearInterval(backgroudOptionInterval)
 
