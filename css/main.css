@@ -787,6 +787,15 @@ nav .menu .menu-btt {
     .contact .container {
       max-width: 90%;
     }
+    .about-image-flex {
+        flex-direction: column;
+    }
+    .about-image-flex img {
+        width: 100%;
+    }
+    .about-image-flex img:nth-child(2),.about-image-flex img:nth-child(3) {
+        display: none;
+    }
   }
 /* end contact */
 
