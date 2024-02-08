@@ -610,6 +610,9 @@ nav .menu .menu-btt {
         grid-template-columns: 1fr;
 
     }
+    .main-title h2 {
+        font-size: 3rem !important;
+    }
 }
 /* end services */
 
@@ -795,6 +798,9 @@ nav .menu .menu-btt {
     }
     .about-image-flex img:nth-child(2),.about-image-flex img:nth-child(3) {
         display: none;
+    }
+    .testemonial .main-title h2 {
+        font-size: 5rem;
     }
   }
 /* end contact */
