@@ -65,7 +65,7 @@ function rondomizeBackground() {
     backgroudOptionInterval = setInterval(() => {
         let images = ['image1.jpg','image2.jpg','image3.jpg','image4.jpg','image5.jpg']
         let randomImage = images[Math.floor(Math.random() * images.length)] 
-        document.querySelector('.landing').style.backgroundImage = 'url("../image/' + randomImage + '")'
+        document.querySelector('.landing').style.backgroundImage = 'url("image/' + randomImage + '")'
         localStorage.setItem('background' , randomImage)
     },1500)}
 
